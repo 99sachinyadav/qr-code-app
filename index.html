@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code genretor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <p>Enter ypur text or URL</p>
+        <input class="input" type="text" placeholder="Enter any text here">
+         <div class="qr">
+            <img class="image"src="" alt="">
+         </div>
+         <button class="button " onclick="getqr()">Genrerate QR code</button>
+    </div>
+</body>
+<script>
+ let input= document.querySelector(".input");
+ let qrimage= document.querySelector(".image");
+  
+  function getqr(){
+    let text=input.value;
+    qrimage.src=` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${text}`
+  }
+ 
+</script>
+</html>

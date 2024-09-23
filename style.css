@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+.container{
+    width:400px;
+    background-color:white;
+    max-height:300px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.container button{
+    background-color: rgb(55, 55, 161);
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+.container input{
+     
+    padding: 15px;
+    outline: 0;
+    border :1px solid #494eea;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.container p{
+     
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.qr{
+    margin: 20px;
+    margin-left:100px;
+}
